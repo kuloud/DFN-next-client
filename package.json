@@ -6,13 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && touch out/.nojekyll"
   },
   "dependencies": {
-    "@huggingface/transformers": "3.0.0-alpha.5",
+    "@huggingface/transformers": "3.2.4",
+    "@nextui-org/react": "^2.6.10",
+    "@nextui-org/system": "^2.4.5",
+    "@nextui-org/theme": "^2.4.4",
     "autoprefixer": "10.4.14",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
+    "framer-motion": "^11.15.0",
     "next": "^14.2.3",
     "postcss": "8.4.31",
     "react": "18.2.0",

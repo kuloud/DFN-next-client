@@ -19,6 +19,7 @@ class DFN {
       progress_callback,
       dtype: "fp16",
     });
+    this.processor.image_processor.do_resize = false;
     return this;
   }
 
@@ -65,6 +66,50 @@ self.addEventListener('message', async (event) => {
     const dfn = await PipelineSingleton.getInstance(x => self.postMessage({ status: 'progress', progress: x }));
 
     console.log("DFN initialized");
+  
+    function padToSquare(img: RawImage): RawImage {
+      const width = img.width;
+      const height = img.height;
+      const maxDim = Math.max(width, height);
+
+      const newImg = new RawImage(
+        new Uint8Array(maxDim * maxDim * img.channels),
+        maxDim,
+        maxDim,
+        img.channels
+      );
+
+      const fillColorValue = [0, 0, 0, 255];
+      for (let y = 0; y < maxDim; y++) {
+        for (let x = 0; x < maxDim; x++) {
+          const index = (y * maxDim + x) * img.channels;
+          newImg.data[index] = fillColorValue[0];
+          newImg.data[index + 1] = fillColorValue[1];
+          newImg.data[index + 2] = fillColorValue[2];
+          if (img.channels === 4) {
+            newImg.data[index + 3] = fillColorValue[3];
+          }
+        }
+      }
+
+      const offsetX = Math.floor((maxDim - width) / 2);
+      const offsetY = Math.floor((maxDim - height) / 2);
+
+      for (let y = 0; y < height; y++) {
+        for (let x = 0; x < width; x++) {
+          const srcIndex = (y * width + x) * img.channels;
+          const destIndex = ((y + offsetY) * maxDim + (x + offsetX)) * img.channels;
+          newImg.data[destIndex] = img.data[srcIndex];
+          newImg.data[destIndex + 1] = img.data[srcIndex + 1];
+          newImg.data[destIndex + 2] = img.data[srcIndex + 2];
+          if (img.channels === 4) {
+            newImg.data[destIndex + 3] = img.data[srcIndex + 3];
+          }
+        }
+      }
+  
+      return newImg;
+    }
 
     const cosineSimilarity = (vecA, vecB) => {
         let dot = 0.0;
@@ -160,7 +205,8 @@ self.addEventListener('message', async (event) => {
     
           // Get image embeddings
 
-          const image = await RawImage.read(imageUrl);
+          const originImage = await RawImage.read(imageUrl);
+          const image = padToSquare(originImage);
           const imageInputs = await dfn.getProcessor()([image]);
           const imageOutputs = await dfn.getVisionModel()(imageInputs);
           const imageEmbedding = normalize( imageOutputs.image_embeds.ort_tensor.cpuData );

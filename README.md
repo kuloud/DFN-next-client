@@ -1,34 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Text-Image Similarity Analysis
+
+A web application that analyzes the semantic similarity between text and images using the DFN (Data Filtering Networks) model. Built with Next.js, Transformers.js, and NextUI.
+
+![loading models](https://github.com/kuloud/DFN-next-client/blob/main/screenshots/image.png)
+![result](https://github.com/kuloud/DFN-next-client/blob/main/screenshots/image1.png)
+
+## Features
+
+- Real-time text and image URL similarity analysis
+- Client-side model processing using Web Workers
+- Progressive model loading with status indicators
+- Modern UI with responsive design
+- Browser-based inference without server requirements
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **UI Library**: NextUI
+- **ML Model**: Transformers.js
+- **Model**: DFN-public (CLIP-based Data Filtering Networks)
+- **Styling**: Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies using pnpm or npm
 
 ```bash
-npm run dev
+pnpm install
 # or
-yarn dev
-# or
-pnpm dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Enter text in the "Text" input field
+2. Provide an image URL in the "URL" input field
+3. Click "Submit" to analyze
+4. View the similarity score and match level
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The application will calculate a similarity score between 0-100%, indicating how well the text semantically matches the image.
 
-## Learn More
+## Technical Details
 
-To learn more about Next.js, take a look at the following resources:
+### Model Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Uses the DFN (Data Filtering Networks) model
+- Processes text and images in parallel
+- Computes cosine similarity between text and image embeddings
+- Model is loaded and cached in the browser
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Performance
 
-## Deploy on Vercel
+- Client-side processing using Web Workers
+- Progressive model downloading with size indicators
+- Caches model for subsequent uses
+- FP16 precision for optimal performance
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Browser Compatibility
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Modern browsers with WebAssembly support
+- Recommended: Chrome, Firefox, Safari, Edge (latest versions)
+
+## License
+
+[Your chosen license]
+
+## Acknowledgments
+
+- [Transformers.js](https://huggingface.co/docs/transformers.js) by Hugging Face
+- [NextUI](https://nextui.org/) for the UI components
+- [DFN Model](https://huggingface.co/XudongShen/DFN-public) by XudongShen

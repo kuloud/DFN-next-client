@@ -9,8 +9,8 @@ export default function Home() {
   const [result, setResult] = useState(null);
   const [ready, setReady] = useState(null);
   const [error, setError] = useState(null);
-  const [textInput, setTextInput] = useState('');
-  const [urlInput, setUrlInput] = useState('');
+  const [textInput, setTextInput] = useState('Suit Aile Odası');
+  const [urlInput, setUrlInput] = useState('https://greenfield-sp.defibit.io/gata-task-01/0x01/963471b1401d529046b655b77aa0b6c2');
   const [isLoading, setIsLoading] = useState(false);
 
   const [downloads, setDownloads] = useState(new Map());
@@ -28,7 +28,7 @@ export default function Home() {
     }
 
     const onMessageReceived = (e) => {
-      console.log('Message received:', e.data);
+      // console.log('Message received:', e.data);
       switch (e.data.status) {
         case 'initiate':
           setReady(false);
@@ -62,6 +62,7 @@ export default function Home() {
           setDownloads(new Map());
           break;
         case 'complete':
+          console.log('Message received:', e.data);
           setResult(e.data.output);
           setIsLoading(false);
           break;

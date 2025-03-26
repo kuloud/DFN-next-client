@@ -71,19 +71,23 @@ async function readImage(url: string): Promise<RawImage> {
   // 使用浏览器原生API手动处理颜色空间
   const response = await fetch(url);
   const blob = await response.blob();
+
   const bitmap = await createImageBitmap(blob);
 
   // 创建带颜色空间控制的Canvas
   const canvas = new OffscreenCanvas(bitmap.width, bitmap.height);
-  const ctx = canvas.getContext("2d", {
-    colorSpace: "srgb", // 强制使用sRGB
-    willReadFrequently: true,
-  })!;
+  const ctx = canvas.getContext("2d")!;
 
   // 绘制并获取图像数据
   ctx.drawImage(bitmap, 0, 0);
-  const imageData = ctx.getImageData(0, 0, bitmap.width, bitmap.height, {
-    colorSpace: "srgb", // Safari需要显式指定
+  const imageData = ctx.getImageData(0, 0, bitmap.width, bitmap.height);
+
+  console.log("readImage", {
+    blob,
+    bitmap,
+    canvas,
+    ctx,
+    imageData,
   });
 
   // 转换为RawImage格式
@@ -278,12 +282,12 @@ self.addEventListener("message", async (event) => {
       const originHash = MD5(
         CryptoJS.lib.WordArray.create(new Uint8Array(originImage.data.buffer))
       ).toString();
-      console.log("Origin Image MD5:", originHash);
+      console.info("Origin Image MD5:", originHash);
       const hash = MD5(
         CryptoJS.lib.WordArray.create(new Uint8Array(image.data.buffer))
       ).toString();
-      console.log("Image MD5:", hash);
-      console.log("imageInputs", {
+      console.info("Image MD5:", hash);
+      console.info("imageInputs", {
         originImage: originImage,
         image: image,
         imageInputs: imageInputs,

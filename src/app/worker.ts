@@ -14,8 +14,8 @@ import {
   RawImage,
   Tensor,
 } from "@huggingface/transformers";
-import MD5 from 'crypto-js/md5';
-import * as CryptoJS from 'crypto-js';
+import MD5 from "crypto-js/md5";
+import * as CryptoJS from "crypto-js";
 
 class DFN {
   private processor?: Processor;
@@ -46,6 +46,7 @@ class DFN {
       }
     );
     this.processor.image_processor.do_resize = false;
+    console.log("DFN allowLocalModels", env.allowLocalModels);
     return this;
   }
 
@@ -64,6 +65,34 @@ class DFN {
   getVisionModel() {
     return this.visionModel;
   }
+}
+
+async function readImage(url: string): Promise<RawImage> {
+  // 使用浏览器原生API手动处理颜色空间
+  const response = await fetch(url);
+  const blob = await response.blob();
+  const bitmap = await createImageBitmap(blob);
+
+  // 创建带颜色空间控制的Canvas
+  const canvas = new OffscreenCanvas(bitmap.width, bitmap.height);
+  const ctx = canvas.getContext("2d", {
+    colorSpace: "srgb", // 强制使用sRGB
+    willReadFrequently: true,
+  })!;
+
+  // 绘制并获取图像数据
+  ctx.drawImage(bitmap, 0, 0);
+  const imageData = ctx.getImageData(0, 0, bitmap.width, bitmap.height, {
+    colorSpace: "srgb", // Safari需要显式指定
+  });
+
+  // 转换为RawImage格式
+  return new RawImage(
+    new Uint8ClampedArray(imageData.data.buffer),
+    imageData.width,
+    imageData.height,
+    4
+  );
 }
 
 // Use the Singleton pattern to enable lazy construction of the pipeline.
@@ -243,13 +272,17 @@ self.addEventListener("message", async (event) => {
 
       // Get image embeddings
 
-      const originImage = await RawImage.read(imageUrl);
+      const originImage = await readImage(imageUrl);
       const image = padToSquare(originImage);
       const imageInputs = await dfn.getProcessor()([image]);
-      const originHash = MD5(CryptoJS.lib.WordArray.create(new Uint8Array(originImage.data.buffer))).toString();
-      console.log('Origin Image MD5:', originHash);
-      const hash = MD5(CryptoJS.lib.WordArray.create(new Uint8Array(image.data.buffer))).toString();
-      console.log('Image MD5:', hash);
+      const originHash = MD5(
+        CryptoJS.lib.WordArray.create(new Uint8Array(originImage.data.buffer))
+      ).toString();
+      console.log("Origin Image MD5:", originHash);
+      const hash = MD5(
+        CryptoJS.lib.WordArray.create(new Uint8Array(image.data.buffer))
+      ).toString();
+      console.log("Image MD5:", hash);
       console.log("imageInputs", {
         originImage: originImage,
         image: image,

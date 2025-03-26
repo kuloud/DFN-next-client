@@ -14,12 +14,12 @@ class DFN {
     this.textModel = await CLIPTextModelWithProjection.from_pretrained(modelName, {
       progress_callback,
       dtype: "fp32",
-      device: "webgpu",
+      device: "cpu",
     });
     this.visionModel = await CLIPVisionModelWithProjection.from_pretrained(modelName, {
       progress_callback,
       dtype: "fp32",
-      device: "webgpu",
+      device: "cpu",
     });
     this.processor.image_processor.do_resize = false;
     return this;

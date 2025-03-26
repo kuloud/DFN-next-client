@@ -208,6 +208,10 @@ self.addEventListener("message", async (event) => {
           padding: "max_length",
           truncation: true,
         });
+        console.log("textInputs", {
+          chunkText: chunkText,
+          textInputs: textInputs,
+        });
         const textOutputs = await dfn.getTextModel()(textInputs);
         console.log("textOutputs", {
           ort_tensor: textOutputs.text_embeds.ort_tensor,
@@ -240,6 +244,11 @@ self.addEventListener("message", async (event) => {
       const originImage = await RawImage.read(imageUrl);
       const image = padToSquare(originImage);
       const imageInputs = await dfn.getProcessor()([image]);
+      console.log("imageInputs", {
+        originImage: originImage,
+        image: image,
+        imageInputs: imageInputs,
+      });
       const imageOutputs = await dfn.getVisionModel()(imageInputs);
       console.log("imageOutputs", {
         ort_tensor: imageOutputs.image_embeds.ort_tensor,
@@ -247,8 +256,6 @@ self.addEventListener("message", async (event) => {
       const imageEmbedding = normalize(
         imageOutputs.image_embeds.ort_tensor.cpuData
       );
-
-      console.log("backends", { backends: env.backends });
 
       // Compute cosine similarity
       return cosineSimilarity(textEmbedding, imageEmbedding);

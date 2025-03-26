@@ -3,6 +3,7 @@ import {
   AutoTokenizer,
   CLIPTextModelWithProjection,
   CLIPVisionModelWithProjection,
+  env,
   FeatureExtractionPipeline,
   ImageFeatureExtractionPipeline,
   pipeline,
@@ -246,6 +247,8 @@ self.addEventListener("message", async (event) => {
       const imageEmbedding = normalize(
         imageOutputs.image_embeds.ort_tensor.cpuData
       );
+
+      console.log("backends", { backends: env.backends });
 
       // Compute cosine similarity
       return cosineSimilarity(textEmbedding, imageEmbedding);

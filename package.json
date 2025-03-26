@@ -15,6 +15,7 @@
     "@nextui-org/system": "^2.4.5",
     "@nextui-org/theme": "^2.4.4",
     "autoprefixer": "10.4.14",
+    "crypto-js": "^4.2.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
     "framer-motion": "^11.15.0",
@@ -28,6 +29,7 @@
     "protobufjs": "^7.2.4"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
     "@types/react": "19.0.2"
   }
 }

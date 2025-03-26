@@ -14,6 +14,8 @@ import {
   RawImage,
   Tensor,
 } from "@huggingface/transformers";
+import MD5 from 'crypto-js/md5';
+import * as CryptoJS from 'crypto-js';
 
 class DFN {
   private processor?: Processor;
@@ -244,6 +246,10 @@ self.addEventListener("message", async (event) => {
       const originImage = await RawImage.read(imageUrl);
       const image = padToSquare(originImage);
       const imageInputs = await dfn.getProcessor()([image]);
+      const originHash = MD5(CryptoJS.lib.WordArray.create(new Uint8Array(originImage.data.buffer))).toString();
+      console.log('Origin Image MD5:', originHash);
+      const hash = MD5(CryptoJS.lib.WordArray.create(new Uint8Array(image.data.buffer))).toString();
+      console.log('Image MD5:', hash);
       console.log("imageInputs", {
         originImage: originImage,
         image: image,

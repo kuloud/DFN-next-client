@@ -13,11 +13,13 @@ class DFN {
     this.tokenizer = await AutoTokenizer.from_pretrained(modelName);
     this.textModel = await CLIPTextModelWithProjection.from_pretrained(modelName, {
       progress_callback,
-      dtype: "fp16",
+      dtype: "fp32",
+      device: "webgpu",
     });
     this.visionModel = await CLIPVisionModelWithProjection.from_pretrained(modelName, {
       progress_callback,
-      dtype: "fp16",
+      dtype: "fp32",
+      device: "webgpu",
     });
     this.processor.image_processor.do_resize = false;
     return this;

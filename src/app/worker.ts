@@ -4,18 +4,15 @@ import {
   CLIPTextModelWithProjection,
   CLIPVisionModelWithProjection,
   env,
-  FeatureExtractionPipeline,
-  ImageFeatureExtractionPipeline,
-  pipeline,
   PipelineType,
   PreTrainedModel,
   PreTrainedTokenizer,
   Processor,
   RawImage,
-  Tensor,
 } from "@huggingface/transformers";
 import MD5 from "crypto-js/md5";
 import * as CryptoJS from "crypto-js";
+import decode from "image-decode";
 
 class DFN {
   private processor?: Processor;
@@ -67,36 +64,24 @@ class DFN {
   }
 }
 
-async function readImage(url: string): Promise<RawImage> {
-  // 使用浏览器原生API手动处理颜色空间
+async function readImage(url) {
   const response = await fetch(url);
   const blob = await response.blob();
+  const arrayBuffer = await blob.arrayBuffer();
+  const { data, width, height } = decode(arrayBuffer);
+  const imageData = new Uint8ClampedArray(data);
 
-  const bitmap = await createImageBitmap(blob);
-
-  // 创建带颜色空间控制的Canvas
-  const canvas = new OffscreenCanvas(bitmap.width, bitmap.height);
-  const ctx = canvas.getContext("2d")!;
-
-  // 绘制并获取图像数据
-  ctx.drawImage(bitmap, 0, 0);
-  const imageData = ctx.getImageData(0, 0, bitmap.width, bitmap.height);
+  const originHash = MD5(CryptoJS.lib.WordArray.create(data)).toString();
 
   console.log("readImage", {
-    blob,
-    bitmap,
-    canvas,
-    ctx,
+    width,
+    height,
     imageData,
+    data,
+    originHash,
   });
 
-  // 转换为RawImage格式
-  return new RawImage(
-    new Uint8ClampedArray(imageData.data.buffer),
-    imageData.width,
-    imageData.height,
-    4
-  );
+  return new RawImage(data, width, height, 4);
 }
 
 // Use the Singleton pattern to enable lazy construction of the pipeline.

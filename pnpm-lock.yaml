@@ -40,7 +40,7 @@ importers:
         version: 1.2.2
       next:
         specifier: ^14.2.3
-        version: 14.2.22(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 14.2.26(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       postcss:
         specifier: 8.4.31
         version: 8.4.31
@@ -270,68 +270,69 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@next/env@14.2.22':
-    resolution: {integrity: sha512-EQ6y1QeNQglNmNIXvwP/Bb+lf7n9WtgcWvtoFsHquVLCJUuxRs+6SfZ5EK0/EqkkLex4RrDySvKgKNN7PXip7Q==}
+  '@next/env@14.2.26':
+    resolution: {integrity: sha512-vO//GJ/YBco+H7xdQhzJxF7ub3SUwft76jwaeOyVVQFHCi5DCnkP16WHB+JBylo4vOKPoZBlR94Z8xBxNBdNJA==}
 
   '@next/eslint-plugin-next@13.4.12':
     resolution: {integrity: sha512-6rhK9CdxEgj/j1qvXIyLTWEaeFv7zOK8yJMulz3Owel0uek0U9MJCGzmKgYxM3aAUBo3gKeywCZKyQnJKto60A==}
 
-  '@next/swc-darwin-arm64@14.2.22':
-    resolution: {integrity: sha512-HUaLiehovgnqY4TMBZJ3pDaOsTE1spIXeR10pWgdQVPYqDGQmHJBj3h3V6yC0uuo/RoY2GC0YBFRkOX3dI9WVQ==}
+  '@next/swc-darwin-arm64@14.2.26':
+    resolution: {integrity: sha512-zDJY8gsKEseGAxG+C2hTMT0w9Nk9N1Sk1qV7vXYz9MEiyRoF5ogQX2+vplyUMIfygnjn9/A04I6yrUTRTuRiyQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@14.2.22':
-    resolution: {integrity: sha512-ApVDANousaAGrosWvxoGdLT0uvLBUC+srqOcpXuyfglA40cP2LBFaGmBjhgpxYk5z4xmunzqQvcIgXawTzo2uQ==}
+  '@next/swc-darwin-x64@14.2.26':
+    resolution: {integrity: sha512-U0adH5ryLfmTDkahLwG9sUQG2L0a9rYux8crQeC92rPhi3jGQEY47nByQHrVrt3prZigadwj/2HZ1LUUimuSbg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@14.2.22':
-    resolution: {integrity: sha512-3O2J99Bk9aM+d4CGn9eEayJXHuH9QLx0BctvWyuUGtJ3/mH6lkfAPRI4FidmHMBQBB4UcvLMfNf8vF0NZT7iKw==}
+  '@next/swc-linux-arm64-gnu@14.2.26':
+    resolution: {integrity: sha512-SINMl1I7UhfHGM7SoRiw0AbwnLEMUnJ/3XXVmhyptzriHbWvPPbbm0OEVG24uUKhuS1t0nvN/DBvm5kz6ZIqpg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@14.2.22':
-    resolution: {integrity: sha512-H/hqfRz75yy60y5Eg7DxYfbmHMjv60Dsa6IWHzpJSz4MRkZNy5eDnEW9wyts9bkxwbOVZNPHeb3NkqanP+nGPg==}
+  '@next/swc-linux-arm64-musl@14.2.26':
+    resolution: {integrity: sha512-s6JaezoyJK2DxrwHWxLWtJKlqKqTdi/zaYigDXUJ/gmx/72CrzdVZfMvUc6VqnZ7YEvRijvYo+0o4Z9DencduA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@14.2.22':
-    resolution: {integrity: sha512-LckLwlCLcGR1hlI5eiJymR8zSHPsuruuwaZ3H2uudr25+Dpzo6cRFjp/3OR5UYJt8LSwlXv9mmY4oI2QynwpqQ==}
+  '@next/swc-linux-x64-gnu@14.2.26':
+    resolution: {integrity: sha512-FEXeUQi8/pLr/XI0hKbe0tgbLmHFRhgXOUiPScz2hk0hSmbGiU8aUqVslj/6C6KA38RzXnWoJXo4FMo6aBxjzg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@14.2.22':
-    resolution: {integrity: sha512-qGUutzmh0PoFU0fCSu0XYpOfT7ydBZgDfcETIeft46abPqP+dmePhwRGLhFKwZWxNWQCPprH26TjaTxM0Nv8mw==}
+  '@next/swc-linux-x64-musl@14.2.26':
+    resolution: {integrity: sha512-BUsomaO4d2DuXhXhgQCVt2jjX4B4/Thts8nDoIruEJkhE5ifeQFtvW5c9JkdOtYvE5p2G0hcwQ0UbRaQmQwaVg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@14.2.22':
-    resolution: {integrity: sha512-K6MwucMWmIvMb9GlvT0haYsfIPxfQD8yXqxwFy4uLFMeXIb2TcVYQimxkaFZv86I7sn1NOZnpOaVk5eaxThGIw==}
+  '@next/swc-win32-arm64-msvc@14.2.26':
+    resolution: {integrity: sha512-5auwsMVzT7wbB2CZXQxDctpWbdEnEW/e66DyXO1DcgHxIyhP06awu+rHKshZE+lPLIGiwtjo7bsyeuubewwxMw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-ia32-msvc@14.2.22':
-    resolution: {integrity: sha512-5IhDDTPEbzPR31ZzqHe90LnNe7BlJUZvC4sA1thPJV6oN5WmtWjZ0bOYfNsyZx00FJt7gggNs6SrsX0UEIcIpA==}
+  '@next/swc-win32-ia32-msvc@14.2.26':
+    resolution: {integrity: sha512-GQWg/Vbz9zUGi9X80lOeGsz1rMH/MtFO/XqigDznhhhTfDlDoynCM6982mPCbSlxJ/aveZcKtTlwfAjwhyxDpg==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@14.2.22':
-    resolution: {integrity: sha512-nvRaB1PyG4scn9/qNzlkwEwLzuoPH3Gjp7Q/pLuwUgOTt1oPMlnCI3A3rgkt+eZnU71emOiEv/mR201HoURPGg==}
+  '@next/swc-win32-x64-msvc@14.2.26':
+    resolution: {integrity: sha512-2rdB3T1/Gp7bv1eQTTm9d1Y1sv9UuJ2LAwOE0Pe2prHKe32UNscj7YS13fRB37d0GAiGNR+Y7ZcW8YjDI8Ns0w==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
   '@nextui-org/accordion@2.2.6':
     resolution: {integrity: sha512-injM1MJDdAxQ2TWHRXWM8aM2fELwsdQuvWSz4QINMMauS6qgWxWVF1OqxTd0FxSAAOyMuJIdm45p2K6eV9Ocsw==}
+    deprecated: This package has been deprecated. Please use @heroui/accordion instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -341,6 +342,7 @@ packages:
 
   '@nextui-org/alert@2.2.8':
     resolution: {integrity: sha512-2UzofZNowJCnRge98Qjj3+G586d2xXMEqyfJasNc2xXrejMmqNwnFC5vn1qNi+vzqnqOr75kTfQHtyRRLWEwhQ==}
+    deprecated: This package has been deprecated. Please use @heroui/alert instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -355,6 +357,7 @@ packages:
 
   '@nextui-org/autocomplete@2.3.8':
     resolution: {integrity: sha512-N7fRp5aAKi9hHX+ApqKfsZ3obOsizrRB2DZcbOrw2LgDjucsb3btyl8Zqi4oY4ZGSEn1DdCkbGylKPrgHTZ23Q==}
+    deprecated: This package has been deprecated. Please use @heroui/autocomplete instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -364,6 +367,7 @@ packages:
 
   '@nextui-org/avatar@2.2.5':
     resolution: {integrity: sha512-ugpwuH1M+eyWY+6Fb4OgGev1HweRrE61bA3rHxRzR3CcjWoe9g7JoQ04NbNNLUDp+aZuil/RWmgSfGUXEexZVQ==}
+    deprecated: This package has been deprecated. Please use @heroui/avatar instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -372,6 +376,7 @@ packages:
 
   '@nextui-org/badge@2.2.4':
     resolution: {integrity: sha512-5Ac/ZpVFO8BFKzCbytu8NOCFQ4in9/BlP0qMUaPzqTJWJUNZljWyowSUI2BnFhnCG0hI4t1KTOxBpp0XDD/FGQ==}
+    deprecated: This package has been deprecated. Please use @heroui/badge instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -380,6 +385,7 @@ packages:
 
   '@nextui-org/breadcrumbs@2.2.5':
     resolution: {integrity: sha512-hNhObcXlBu3itLdkZ70f/ZiKZt8VI+neolZFf9Ay7zs0p0fQKmNsDcd1Bj38DT652k+OYi/vALpR8f3Fa9WQsA==}
+    deprecated: This package has been deprecated. Please use @heroui/breadcrumbs instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -388,6 +394,7 @@ packages:
 
   '@nextui-org/button@2.2.8':
     resolution: {integrity: sha512-Km9ER+jpA3DdYmbh8k30w2DMXZIPtZjs7QVVaPAEW+rJYnGWNsomcltlOLIvHpBYeAbB8hfJCbRJ35r9WeL9Gw==}
+    deprecated: This package has been deprecated. Please use @heroui/button instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -397,6 +404,7 @@ packages:
 
   '@nextui-org/calendar@2.2.8':
     resolution: {integrity: sha512-Bt1Nl2mwBhFD4cBBBLtZkSmry9VZGnBl/7CV84tojrJsLUV5268wp/S6w4sQb5q4uGEO7qF+eZx6w5E6OHrcVQ==}
+    deprecated: This package has been deprecated. Please use @heroui/calendar instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -406,6 +414,7 @@ packages:
 
   '@nextui-org/card@2.2.8':
     resolution: {integrity: sha512-EOEVw7mao1dnwGaeoSwBwF1bEL3JirMR0C/EVot427eV8GmWOliBM+kEdD6NLloFMbK4NKHO+Mg8kYTTtGBowA==}
+    deprecated: This package has been deprecated. Please use @heroui/card instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -415,6 +424,7 @@ packages:
 
   '@nextui-org/checkbox@2.3.7':
     resolution: {integrity: sha512-JTYvBQfAO7AKEEIdfWJ/SU0SiHDnay15lMZytxzLcbFr5kkFUCaFbNWrFmz3OQQTsHFqML1Hbd9cqUeMvdP/Fg==}
+    deprecated: This package has been deprecated. Please use @heroui/checkbox instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.3'
@@ -423,6 +433,7 @@ packages:
 
   '@nextui-org/chip@2.2.5':
     resolution: {integrity: sha512-AfXF40oLmi15X6z1kSwLSnxKixG2KR5TUXpu4xuLED2ub1me9mjiiPYCn2bo5nlu2lgGd93XSdCyyx6kQKQECA==}
+    deprecated: This package has been deprecated. Please use @heroui/chip instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -431,6 +442,7 @@ packages:
 
   '@nextui-org/code@2.2.5':
     resolution: {integrity: sha512-o/LdXzayZeLKKQUZDF2a0RWgA3D7PdR/zVGzA/eQ74a4bJZ7FqYgsarIBQ6O8s+LtOsI3Z9CSLoTIspI/F+3Pw==}
+    deprecated: This package has been deprecated. Please use @heroui/code instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.4.0'
       react: '>=18 || >=19.0.0-rc.0'
@@ -438,6 +450,7 @@ packages:
 
   '@nextui-org/date-input@2.3.7':
     resolution: {integrity: sha512-TnZOjGSC/YtNm3k7uHXEOXttHqXdkE1AkUW36yIxwB9nV2jxPnWClImvc0wtZx+3tZ1XY+aWHo4ZJowJpeTbNA==}
+    deprecated: This package has been deprecated. Please use @heroui/date-input instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -446,6 +459,7 @@ packages:
 
   '@nextui-org/date-picker@2.3.8':
     resolution: {integrity: sha512-0i6Ode6rEHAVQHv3OxkB4yGnAKnS/UjJ+mKyFTLzA29LSkvmhNmquNIj9lOoenDvSvKKVB18QxuQEm1EKwgPkQ==}
+    deprecated: This package has been deprecated. Please use @heroui/date-picker instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -455,6 +469,7 @@ packages:
 
   '@nextui-org/divider@2.2.5':
     resolution: {integrity: sha512-OB8b3CU4nQ5ARIGL48izhzrAHR0mnwws+Kd5LqRCZ/1R9uRMqsq7L0gpG9FkuV2jf2FuA7xa/GLOLKbIl4CEww==}
+    deprecated: This package has been deprecated. Please use @heroui/divider instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.4.0'
       react: '>=18 || >=19.0.0-rc.0'
@@ -467,6 +482,7 @@ packages:
 
   '@nextui-org/drawer@2.2.6':
     resolution: {integrity: sha512-WP0RMD/2aCr1jdpG2ygyx2fIY8TV93X5sqOnZE495iPv1ODrnj+lrj4fqewPTrouvothCmaYpY3q3q/P9vA4eg==}
+    deprecated: This package has been deprecated. Please use @heroui/drawer instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -475,6 +491,7 @@ packages:
 
   '@nextui-org/dropdown@2.3.8':
     resolution: {integrity: sha512-aRvxZJhrfL0GEOZpX1uFvQVuVODLU0Lc3m3xPxqc337zLF09kXLiSao09oo5AbUoOAlfUP/d1qWH6wIOoJrvIA==}
+    deprecated: This package has been deprecated. Please use @heroui/dropdown instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -484,6 +501,7 @@ packages:
 
   '@nextui-org/form@2.1.7':
     resolution: {integrity: sha512-RnvvT0O/vJTKem4d1Wl7n2d/Jk3Bs6U22ko0FBSeA+y4KeZO2W7k0ls1TcLzgv8JTN0l2ELVUIBrrgkJlrrWBQ==}
+    deprecated: This package has been deprecated. Please use @heroui/form instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -499,6 +517,7 @@ packages:
 
   '@nextui-org/image@2.2.4':
     resolution: {integrity: sha512-pTno8kxFtGWgBiuW1QV3z2n+9T/uXUy0x8yPL0hXyIUkvVLINlJ1xVOnpM9XRHt/ickRdeINP7itN2updyBeVQ==}
+    deprecated: This package has been deprecated. Please use @heroui/image instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -507,6 +526,7 @@ packages:
 
   '@nextui-org/input-otp@2.1.7':
     resolution: {integrity: sha512-JQ4Scnll9NkPEORH1S+JypB/5YGFElESjHyClF6l4Uw6joUZrXihK+4Wqcb2Xec+hi1cRW6X86eItbPTNM+9Kg==}
+    deprecated: This package has been deprecated. Please use @heroui/input-otp instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -515,6 +535,7 @@ packages:
 
   '@nextui-org/input@2.4.7':
     resolution: {integrity: sha512-c5ECj9XQnfwk1ctmIGIWY/JPYbIYMPLzLSL1zohF5aqln8Af/MgERk5/T2VQISQssc0JMJv/Q7dd/MgVnv3phw==}
+    deprecated: This package has been deprecated. Please use @heroui/input instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -523,6 +544,7 @@ packages:
 
   '@nextui-org/kbd@2.2.5':
     resolution: {integrity: sha512-52n6XjLWnsxkQiwbQG04jEYu2xK07FEpIRycWxA0cWSFWOAiyYxaa1xYeb5va8tG8M0UCEwlvrPyxK+Wh5GmMQ==}
+    deprecated: This package has been deprecated. Please use @heroui/kbd instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.4.0'
       react: '>=18 || >=19.0.0-rc.0'
@@ -530,6 +552,7 @@ packages:
 
   '@nextui-org/link@2.2.6':
     resolution: {integrity: sha512-A3+aHbuipch7Xf470qxCIbMXMW6oGX8QoT9Le2CS7YWjpNZOsGzQPQvC3Diom05vujgdlw5egses6rZak10kuQ==}
+    deprecated: This package has been deprecated. Please use @heroui/link instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -538,6 +561,7 @@ packages:
 
   '@nextui-org/listbox@2.3.8':
     resolution: {integrity: sha512-M2j3f2zVoKlIvIv6ZMUq2BfB9WI0fxQoRV7vGSIYTDUlNMPwxmeD0xWmmtlJB5nxtmMR7G5NlzJRSTHXhFaUMA==}
+    deprecated: This package has been deprecated. Please use @heroui/listbox instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -546,6 +570,7 @@ packages:
 
   '@nextui-org/menu@2.2.8':
     resolution: {integrity: sha512-JGyrAc9FEsd2rNlDwnckBkSdXe2V7cJN2Y62RRaQeJFMOZsw8tnmW9SLaL4ZB+LTmiGLORsU+b0frizu960HnA==}
+    deprecated: This package has been deprecated. Please use @heroui/menu instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -554,6 +579,7 @@ packages:
 
   '@nextui-org/modal@2.2.6':
     resolution: {integrity: sha512-K3jql20SKq/sJWGsjlHq92/55tGo55Ko4PT92SRvqC0vySYe9ZX1KSVpOR3/k4cQRkd+3hdbGjZBs3bVcDpB6g==}
+    deprecated: This package has been deprecated. Please use @heroui/modal instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -563,6 +589,7 @@ packages:
 
   '@nextui-org/navbar@2.2.7':
     resolution: {integrity: sha512-K9puXcNDywCxYe3Ji88Ple2Oh+8RdYn4cZzBwo6oDpIsMOYva9rNURyasNa2WKrlCfdvaAKIFSuJQp4Ed64KOg==}
+    deprecated: This package has been deprecated. Please use @heroui/navbar instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -572,6 +599,7 @@ packages:
 
   '@nextui-org/pagination@2.2.7':
     resolution: {integrity: sha512-MpKkoC+HPs3kTS8JgCyP6ZpBFtlCmn9YpI11OOhYM9faQbmv8k0D+f11CCm+GRO+yEE08MCpcZHqY3OLdASW9Q==}
+    deprecated: This package has been deprecated. Please use @heroui/pagination instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -580,6 +608,7 @@ packages:
 
   '@nextui-org/popover@2.3.8':
     resolution: {integrity: sha512-hRUSD7NVlkRQjfShe6glnQAsNI9nOugLKqSzUoDt275P4fDHutEedRZUCasjOeMO+xhehIX8cyZ2mGyZAan5zQ==}
+    deprecated: This package has been deprecated. Please use @heroui/popover instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -589,6 +618,7 @@ packages:
 
   '@nextui-org/progress@2.2.5':
     resolution: {integrity: sha512-+d317vZhBLc/1PHE2PseIlIX+N5sEO4x1dZvzISvkFQPE1igSeZ8NpbkZWZagxakqp23JoQ6HDWp/Sk7Uwr8tg==}
+    deprecated: This package has been deprecated. Please use @heroui/progress instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -597,6 +627,7 @@ packages:
 
   '@nextui-org/radio@2.3.7':
     resolution: {integrity: sha512-uzPiNlkESccp18+mUnjFbi1OwzYTKMSJ8teoNWGIMQL/Q2dXhxMikL9jlTHOP25ygOPN+lxXa/nX8JiLC6G5zQ==}
+    deprecated: This package has been deprecated. Please use @heroui/radio instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.3'
@@ -615,6 +646,7 @@ packages:
 
   '@nextui-org/react@2.6.10':
     resolution: {integrity: sha512-50tWuyBfObL1HSUW9k9dKffoU83U/tPJR9hJBYdv2fCAzDz4cAw6Hp3ZHHDKOphTIIY+jVMIKkja2PrgLEdkrg==}
+    deprecated: This package has been deprecated. Please use @heroui/react instead.
     peerDependencies:
       framer-motion: '>=11.5.6 || >=12.0.0-alpha.1'
       react: '>=18 || >=19.0.0-rc.0'
@@ -622,6 +654,7 @@ packages:
 
   '@nextui-org/ripple@2.2.6':
     resolution: {integrity: sha512-8bdE+nPZdT/U8H0fRaZBOAB3npfKGnv1KO2JWL2jSnN7wkO4kXZwcHqZT3aRFxqWvdsPXj8IajMpnMoM7LNYkA==}
+    deprecated: This package has been deprecated. Please use @heroui/ripple instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -631,6 +664,7 @@ packages:
 
   '@nextui-org/scroll-shadow@2.3.4':
     resolution: {integrity: sha512-/21shF/RIXOcdQp5CKy/UHZJse03O7L31ZJV1wAh8TJZOFof2oRpYIl2AibDxUnP2UR9fpjqq0b6F6e6d1Kq5Q==}
+    deprecated: This package has been deprecated. Please use @heroui/scroll-shadow instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -639,6 +673,7 @@ packages:
 
   '@nextui-org/select@2.4.8':
     resolution: {integrity: sha512-ZX6zrMXAgOFUno1aReEvNSeUyaGkETbinzKObU0IP4/aj3I/9FjzNhj42rZrudGi356slAFRTQiYuG6O8I4wcA==}
+    deprecated: This package has been deprecated. Please use @heroui/select instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -656,6 +691,7 @@ packages:
 
   '@nextui-org/skeleton@2.2.4':
     resolution: {integrity: sha512-LMQI5pcYbgsJcObU9KcODvs63iswZQKuuYtDH05y4SQvDerxkjxJYj72/ld1pkwOcM8/9Tc2ya/xlk90yjlg5g==}
+    deprecated: This package has been deprecated. Please use @heroui/skeleton instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -664,6 +700,7 @@ packages:
 
   '@nextui-org/slider@2.4.6':
     resolution: {integrity: sha512-BOJQcjGYr0uX/5opQauamYp26D8erMEUNqj07IxwWDIo+qnTCrUg762rAIlj3W4u3pBJJ2FkZUWbsEYDnnbi7g==}
+    deprecated: This package has been deprecated. Please use @heroui/slider instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -672,6 +709,7 @@ packages:
 
   '@nextui-org/snippet@2.2.9':
     resolution: {integrity: sha512-Sc3CdW4/UCL4hhwKP0k1ffLYLo6JlI9XbB3exS77j1lS6ox/FRc+d7YylMrrNuAb/L4bIjR/TUoNiu+Rkc6u0Q==}
+    deprecated: This package has been deprecated. Please use @heroui/snippet instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -681,6 +719,7 @@ packages:
 
   '@nextui-org/spacer@2.2.5':
     resolution: {integrity: sha512-oKh765tHx+BaD4yHewIfWGOcLWk3FsH/VBXdAsaiMyrr5MsW9LGH7e3kzBCZswBeZNN5MaDok6WZu1B0PnQIFw==}
+    deprecated: This package has been deprecated. Please use @heroui/spacer instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.4.0'
       react: '>=18 || >=19.0.0-rc.0'
@@ -688,6 +727,7 @@ packages:
 
   '@nextui-org/spinner@2.2.5':
     resolution: {integrity: sha512-bU4DV1USHQUbbhzB0Qi6q27JNm1uF6r+IOs/7BfQj6sj2j124ull2BuxpyhmrAnwb2Hqj7U1goy9zMigoS37mg==}
+    deprecated: This package has been deprecated. Please use @heroui/spinner instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.4.0'
       react: '>=18 || >=19.0.0-rc.0'
@@ -695,6 +735,7 @@ packages:
 
   '@nextui-org/switch@2.2.7':
     resolution: {integrity: sha512-745oSgHN4LUYFcGwN+xDSa94fBb1H+dy3RYS1sV+RzAKmHyN2OjE4x40/3W09KDQQyyA0f7y/M8gh49f4tqphw==}
+    deprecated: This package has been deprecated. Please use @heroui/switch instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.3'
@@ -716,6 +757,7 @@ packages:
 
   '@nextui-org/table@2.2.7':
     resolution: {integrity: sha512-ibVZ6OF+yd+NKPATyY16TzRJRwSa6hDr/4OUyT8w1H8dtdQ3nFd13VF+6AMpFvCmTsvB8CBwge7IqZiqqkbgzA==}
+    deprecated: This package has been deprecated. Please use @heroui/table instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -724,6 +766,7 @@ packages:
 
   '@nextui-org/tabs@2.2.6':
     resolution: {integrity: sha512-ckommLk0fCu/BJLETXKvNHN5aqoyyujHAm1nkSH87PX247HzYd4F7VFacqwJwEHX22BlxblpKmCOkYdQqHlyuA==}
+    deprecated: This package has been deprecated. Please use @heroui/tabs instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -738,6 +781,7 @@ packages:
 
   '@nextui-org/tooltip@2.2.6':
     resolution: {integrity: sha512-a8/DKDAL39nBEc/2ODP2tnGzfhmvAm0LKa0/5PxiHaY+Ym2L3+m1CVQqlT1lNVSUr8F2OohPFkF+jlP1QuntkQ==}
+    deprecated: This package has been deprecated. Please use @heroui/tooltip instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -844,6 +888,7 @@ packages:
 
   '@nextui-org/user@2.2.5':
     resolution: {integrity: sha512-T9lMlFuTF+3luwgtkPPZIx0AdfyrDHu6crwN5rjpt+OTu65wF5gc7b8t8bjFzjRMNpJsiUfRxm2mTPjE9fGIAA==}
+    deprecated: This package has been deprecated. Please use @heroui/user instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -1313,6 +1358,9 @@ packages:
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
 
+  '@swc/helpers@0.5.15':
+    resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
+
   '@swc/helpers@0.5.5':
     resolution: {integrity: sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==}
 
@@ -1535,6 +1583,9 @@ packages:
 
   caniuse-lite@1.0.30001690:
     resolution: {integrity: sha512-5ExiE3qQN6oF8Clf8ifIDcMRCRE/dMGcETG/XGMD8/XiXm6HXQgQTh1yZYLXXpSOsEUlJm1Xr7kGULZTuGtP/w==}
+
+  caniuse-lite@1.0.30001707:
+    resolution: {integrity: sha512-3qtRjw/HQSMlDWf+X79N206fepf4SOOU6SQLMaq/0KkZLmSjPxAkBOQQ+FxbHKfHmYLZFfdWsO3KA90ceHPSnw==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2323,8 +2374,8 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  next@14.2.22:
-    resolution: {integrity: sha512-Ps2caobQ9hlEhscLPiPm3J3SYhfwfpMqzsoCMZGWxt9jBRK9hoBZj2A37i8joKhsyth2EuVKDVJCTF5/H4iEDw==}
+  next@14.2.26:
+    resolution: {integrity: sha512-b81XSLihMwCfwiUVRRja3LphLo4uBBMZEzBBWMaISbKTwOmq3wPknIETy/8000tr7Gq4WmbuFYPS7jOYIf+ZJw==}
     engines: {node: '>=18.17.0'}
     hasBin: true
     peerDependencies:
@@ -3121,20 +3172,20 @@ snapshots:
 
   '@internationalized/date@3.6.0':
     dependencies:
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
 
   '@internationalized/message@3.1.6':
     dependencies:
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       intl-messageformat: 10.7.11
 
   '@internationalized/number@3.6.0':
     dependencies:
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
 
   '@internationalized/string@3.2.5':
     dependencies:
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -3166,37 +3217,37 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@next/env@14.2.22': {}
+  '@next/env@14.2.26': {}
 
   '@next/eslint-plugin-next@13.4.12':
     dependencies:
       glob: 7.1.7
 
-  '@next/swc-darwin-arm64@14.2.22':
+  '@next/swc-darwin-arm64@14.2.26':
     optional: true
 
-  '@next/swc-darwin-x64@14.2.22':
+  '@next/swc-darwin-x64@14.2.26':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@14.2.22':
+  '@next/swc-linux-arm64-gnu@14.2.26':
     optional: true
 
-  '@next/swc-linux-arm64-musl@14.2.22':
+  '@next/swc-linux-arm64-musl@14.2.26':
     optional: true
 
-  '@next/swc-linux-x64-gnu@14.2.22':
+  '@next/swc-linux-x64-gnu@14.2.26':
     optional: true
 
-  '@next/swc-linux-x64-musl@14.2.22':
+  '@next/swc-linux-x64-musl@14.2.26':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@14.2.22':
+  '@next/swc-win32-arm64-msvc@14.2.26':
     optional: true
 
-  '@next/swc-win32-ia32-msvc@14.2.22':
+  '@next/swc-win32-ia32-msvc@14.2.26':
     optional: true
 
-  '@next/swc-win32-x64-msvc@14.2.22':
+  '@next/swc-win32-x64-msvc@14.2.26':
     optional: true
 
   '@nextui-org/accordion@2.2.6(@nextui-org/system@2.4.5(@nextui-org/theme@2.4.4(tailwindcss@3.3.3))(framer-motion@11.15.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@nextui-org/theme@2.4.4(tailwindcss@3.3.3))(framer-motion@11.15.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
@@ -4268,7 +4319,7 @@ snapshots:
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/breadcrumbs': 3.7.9(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/button@3.11.0(react@18.2.0)':
@@ -4280,7 +4331,7 @@ snapshots:
       '@react-stately/toggle': 3.8.0(react@18.2.0)
       '@react-types/button': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/calendar@3.6.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
@@ -4294,7 +4345,7 @@ snapshots:
       '@react-types/button': 3.10.1(react@18.2.0)
       '@react-types/calendar': 3.5.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4310,7 +4361,7 @@ snapshots:
       '@react-stately/toggle': 3.8.0(react@18.2.0)
       '@react-types/checkbox': 3.9.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/combobox@3.11.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
@@ -4329,7 +4380,7 @@ snapshots:
       '@react-types/button': 3.10.1(react@18.2.0)
       '@react-types/combobox': 3.13.1(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4352,7 +4403,7 @@ snapshots:
       '@react-types/datepicker': 3.9.0(react@18.2.0)
       '@react-types/dialog': 3.5.14(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4363,7 +4414,7 @@ snapshots:
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/dialog': 3.5.14(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4372,7 +4423,7 @@ snapshots:
       '@react-aria/interactions': 3.22.5(react@18.2.0)
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       clsx: 2.1.1
       react: 18.2.0
 
@@ -4382,7 +4433,7 @@ snapshots:
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-stately/form': 3.1.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/grid@3.11.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
@@ -4399,7 +4450,7 @@ snapshots:
       '@react-types/checkbox': 3.9.0(react@18.2.0)
       '@react-types/grid': 3.2.10(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4412,7 +4463,7 @@ snapshots:
       '@react-aria/ssr': 3.9.7(react@18.2.0)
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/interactions@3.22.5(react@18.2.0)':
@@ -4420,14 +4471,14 @@ snapshots:
       '@react-aria/ssr': 3.9.7(react@18.2.0)
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/label@3.7.13(react@18.2.0)':
     dependencies:
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/link@3.7.7(react@18.2.0)':
@@ -4437,7 +4488,7 @@ snapshots:
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/link': 3.5.9(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/listbox@3.13.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
@@ -4450,13 +4501,13 @@ snapshots:
       '@react-stately/list': 3.11.1(react@18.2.0)
       '@react-types/listbox': 3.5.3(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
   '@react-aria/live-announcer@3.4.1':
     dependencies:
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
 
   '@react-aria/menu@3.16.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
@@ -4473,7 +4524,7 @@ snapshots:
       '@react-types/button': 3.10.1(react@18.2.0)
       '@react-types/menu': 3.9.13(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4489,7 +4540,7 @@ snapshots:
       '@react-types/button': 3.10.1(react@18.2.0)
       '@react-types/overlays': 3.8.11(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4500,7 +4551,7 @@ snapshots:
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/progress': 3.5.8(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/radio@3.10.10(react@18.2.0)':
@@ -4514,7 +4565,7 @@ snapshots:
       '@react-stately/radio': 3.10.9(react@18.2.0)
       '@react-types/radio': 3.8.5(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/selection@3.21.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
@@ -4525,7 +4576,7 @@ snapshots:
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-stately/selection': 3.18.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4539,7 +4590,7 @@ snapshots:
       '@react-stately/slider': 3.6.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
       '@react-types/slider': 3.7.7(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/spinbutton@3.6.10(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
@@ -4549,13 +4600,13 @@ snapshots:
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/button': 3.10.1(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
   '@react-aria/ssr@3.9.7(react@18.2.0)':
     dependencies:
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/switch@3.6.10(react@18.2.0)':
@@ -4564,7 +4615,7 @@ snapshots:
       '@react-stately/toggle': 3.8.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
       '@react-types/switch': 3.5.7(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/table@3.16.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
@@ -4583,7 +4634,7 @@ snapshots:
       '@react-types/grid': 3.2.10(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
       '@react-types/table': 3.10.3(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4596,7 +4647,7 @@ snapshots:
       '@react-stately/tabs': 3.7.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
       '@react-types/tabs': 3.3.11(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4610,7 +4661,7 @@ snapshots:
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
       '@react-types/textfield': 3.10.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/toggle@3.10.10(react@18.2.0)':
@@ -4621,7 +4672,7 @@ snapshots:
       '@react-stately/toggle': 3.8.0(react@18.2.0)
       '@react-types/checkbox': 3.9.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/toolbar@3.0.0-beta.11(react@18.2.0)':
@@ -4630,7 +4681,7 @@ snapshots:
       '@react-aria/i18n': 3.12.4(react@18.2.0)
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/tooltip@3.7.10(react@18.2.0)':
@@ -4641,7 +4692,7 @@ snapshots:
       '@react-stately/tooltip': 3.5.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
       '@react-types/tooltip': 3.4.13(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-aria/utils@3.26.0(react@18.2.0)':
@@ -4649,7 +4700,7 @@ snapshots:
       '@react-aria/ssr': 3.9.7(react@18.2.0)
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       clsx: 2.1.1
       react: 18.2.0
 
@@ -4658,7 +4709,7 @@ snapshots:
       '@react-aria/interactions': 3.22.5(react@18.2.0)
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/calendar@3.6.0(react@18.2.0)':
@@ -4667,7 +4718,7 @@ snapshots:
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/calendar': 3.5.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/checkbox@3.6.10(react@18.2.0)':
@@ -4676,13 +4727,13 @@ snapshots:
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/checkbox': 3.9.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/collections@3.12.0(react@18.2.0)':
     dependencies:
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/combobox@3.10.1(react@18.2.0)':
@@ -4695,7 +4746,7 @@ snapshots:
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/combobox': 3.13.1(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/datepicker@3.11.0(react@18.2.0)':
@@ -4707,17 +4758,17 @@ snapshots:
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/datepicker': 3.9.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/flags@3.0.5':
     dependencies:
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
 
   '@react-stately/form@3.1.0(react@18.2.0)':
     dependencies:
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/grid@3.10.0(react@18.2.0)':
@@ -4726,7 +4777,7 @@ snapshots:
       '@react-stately/selection': 3.18.0(react@18.2.0)
       '@react-types/grid': 3.2.10(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/list@3.11.1(react@18.2.0)':
@@ -4735,7 +4786,7 @@ snapshots:
       '@react-stately/selection': 3.18.0(react@18.2.0)
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/menu@3.9.0(react@18.2.0)':
@@ -4743,14 +4794,14 @@ snapshots:
       '@react-stately/overlays': 3.6.12(react@18.2.0)
       '@react-types/menu': 3.9.13(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/overlays@3.6.12(react@18.2.0)':
     dependencies:
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/overlays': 3.8.11(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/radio@3.10.9(react@18.2.0)':
@@ -4759,7 +4810,7 @@ snapshots:
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/radio': 3.8.5(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/select@3.6.9(react@18.2.0)':
@@ -4769,7 +4820,7 @@ snapshots:
       '@react-stately/overlays': 3.6.12(react@18.2.0)
       '@react-types/select': 3.9.8(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/selection@3.18.0(react@18.2.0)':
@@ -4777,7 +4828,7 @@ snapshots:
       '@react-stately/collections': 3.12.0(react@18.2.0)
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/slider@3.6.0(react@18.2.0)':
@@ -4785,7 +4836,7 @@ snapshots:
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
       '@react-types/slider': 3.7.7(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/table@3.13.0(react@18.2.0)':
@@ -4798,7 +4849,7 @@ snapshots:
       '@react-types/grid': 3.2.10(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
       '@react-types/table': 3.10.3(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/tabs@3.7.0(react@18.2.0)':
@@ -4806,7 +4857,7 @@ snapshots:
       '@react-stately/list': 3.11.1(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
       '@react-types/tabs': 3.3.11(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/toggle@3.8.0(react@18.2.0)':
@@ -4814,14 +4865,14 @@ snapshots:
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/checkbox': 3.9.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/tooltip@3.5.0(react@18.2.0)':
     dependencies:
       '@react-stately/overlays': 3.6.12(react@18.2.0)
       '@react-types/tooltip': 3.4.13(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/tree@3.8.6(react@18.2.0)':
@@ -4830,19 +4881,19 @@ snapshots:
       '@react-stately/selection': 3.18.0(react@18.2.0)
       '@react-stately/utils': 3.10.5(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/utils@3.10.5(react@18.2.0)':
     dependencies:
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-stately/virtualizer@4.2.0(react@18.2.0)':
     dependencies:
       '@react-aria/utils': 3.26.0(react@18.2.0)
       '@react-types/shared': 3.26.0(react@18.2.0)
-      '@swc/helpers': 0.5.5
+      '@swc/helpers': 0.5.15
       react: 18.2.0
 
   '@react-types/accordion@3.0.0-alpha.25(react@18.2.0)':
@@ -4978,6 +5029,10 @@ snapshots:
   '@rushstack/eslint-patch@1.10.4': {}
 
   '@swc/counter@0.1.3': {}
+
+  '@swc/helpers@0.5.15':
+    dependencies:
+      tslib: 2.8.1
 
   '@swc/helpers@0.5.5':
     dependencies:
@@ -5226,6 +5281,8 @@ snapshots:
   camelcase-css@2.0.1: {}
 
   caniuse-lite@1.0.30001690: {}
+
+  caniuse-lite@1.0.30001707: {}
 
   chalk@4.1.2:
     dependencies:
@@ -5483,7 +5540,7 @@ snapshots:
       eslint: 8.45.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0(eslint@8.45.0))(eslint@8.45.0)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.45.0)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(eslint@8.45.0))(eslint@8.45.0))(eslint@8.45.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.45.0)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0)(eslint@8.45.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.45.0)
       eslint-plugin-react: 7.37.3(eslint@8.45.0)
       eslint-plugin-react-hooks: 5.0.0-canary-7118f5dd7-20230705(eslint@8.45.0)
@@ -5514,7 +5571,7 @@ snapshots:
       is-glob: 4.0.3
       stable-hash: 0.0.4
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.45.0)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(eslint@8.45.0))(eslint@8.45.0))(eslint@8.45.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.45.0)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0)(eslint@8.45.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -5529,7 +5586,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.45.0)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(eslint@8.45.0))(eslint@8.45.0))(eslint@8.45.0):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.45.0)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0)(eslint@8.45.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
@@ -6164,27 +6221,27 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@14.2.22(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  next@14.2.26(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
-      '@next/env': 14.2.22
+      '@next/env': 14.2.26
       '@swc/helpers': 0.5.5
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001690
+      caniuse-lite: 1.0.30001707
       graceful-fs: 4.2.11
       postcss: 8.4.31
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       styled-jsx: 5.1.1(react@18.2.0)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 14.2.22
-      '@next/swc-darwin-x64': 14.2.22
-      '@next/swc-linux-arm64-gnu': 14.2.22
-      '@next/swc-linux-arm64-musl': 14.2.22
-      '@next/swc-linux-x64-gnu': 14.2.22
-      '@next/swc-linux-x64-musl': 14.2.22
-      '@next/swc-win32-arm64-msvc': 14.2.22
-      '@next/swc-win32-ia32-msvc': 14.2.22
-      '@next/swc-win32-x64-msvc': 14.2.22
+      '@next/swc-darwin-arm64': 14.2.26
+      '@next/swc-darwin-x64': 14.2.26
+      '@next/swc-linux-arm64-gnu': 14.2.26
+      '@next/swc-linux-arm64-musl': 14.2.26
+      '@next/swc-linux-x64-gnu': 14.2.26
+      '@next/swc-linux-x64-musl': 14.2.26
+      '@next/swc-win32-arm64-msvc': 14.2.26
+      '@next/swc-win32-ia32-msvc': 14.2.26
+      '@next/swc-win32-x64-msvc': 14.2.26
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
